@@ -1,0 +1,79 @@
+:root {
+  --ink: #1c2733;
+  --muted: #6b7a89;
+  --line: #e3e8ee;
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --accent: #0f6b5c;
+  --danger: #b3362b;
+  --warn: #9a6b0f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+header, main, footer {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 16px 20px;
+}
+
+header h1 { margin: 0 0 4px; font-size: 22px; }
+
+.meta { display: flex; align-items: center; gap: 12px; }
+.meta span { color: var(--muted); font-size: 13px; }
+button {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: #fff;
+  border-radius: 6px;
+  padding: 4px 14px;
+  cursor: pointer;
+  font-size: 13px;
+}
+button:hover { background: var(--accent); color: #fff; }
+
+.muted { color: var(--muted); font-size: 13px; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 16px;
+}
+.card h2 { margin: 0 0 10px; font-size: 16px; }
+
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+tr:last-child td { border-bottom: none; }
+
+.tag {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.tag-advance { background: #e3f2ea; color: var(--accent); }
+.tag-review  { background: #fdf3dd; color: var(--warn); }
+.tag-watch   { background: #eef1f5; color: var(--muted); }
+.tag-pass    { background: #f1f1f1; color: var(--muted); }
+.tag-eliminated { background: #fae7e4; color: var(--danger); }
+.tag-needs   { background: #fae7e4; color: var(--danger); }
+.tag-ok      { background: #e3f2ea; color: var(--accent); }
+
+.score { font-weight: 700; font-variant-numeric: tabular-nums; }
+.empty { color: var(--muted); font-size: 13px; }
+
+dl.kv { display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; margin: 0; font-size: 13.5px; }
+dl.kv dt { color: var(--muted); }
+dl.kv dd { margin: 0; }

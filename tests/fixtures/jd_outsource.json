@@ -1,0 +1,15 @@
+{
+  "id": "fake-outsource-20260401",
+  "company": "虚构人力外包（测试数据）",
+  "position": "Python 开发工程师（驻场）",
+  "source_url": "https://example.com/jobs/90002",
+  "source_platform": "测试",
+  "published_at": "2026-03-30",
+  "city": "上海",
+  "district": "",
+  "employment_type": "劳务外包",
+  "salary": { "min_k": 20, "max_k": 30, "months": 12, "note": "" },
+  "risk_notes": [],
+  "jd_text": "岗位职责：驻场开发。任职要求：3 年 Python 经验，熟悉 MySQL。",
+  "collected_at": "2026-04-01"
+}

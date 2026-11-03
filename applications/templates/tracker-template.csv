@@ -1,0 +1,2 @@
+collected_date,job_id,company,position,city,salary_min_k,salary_max_k,score,verdict,status,resume_version,source_url,next_action,notes
+2026-04-01,example-20260401-backend,示例科技（虚构）,Python 后端工程师,上海,20,35,,manual_review,示例数据,,-,补齐 facts.yml 后重跑评估,

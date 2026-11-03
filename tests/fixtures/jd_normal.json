@@ -1,0 +1,15 @@
+{
+  "id": "fake-normal-20260401",
+  "company": "虚构网络科技（测试数据）",
+  "position": "Python 后端工程师",
+  "source_url": "https://example.com/jobs/90001",
+  "source_platform": "测试",
+  "published_at": "2026-03-30",
+  "city": "上海",
+  "district": "徐汇区",
+  "employment_type": "全职",
+  "salary": { "min_k": 22, "max_k": 35, "months": 14, "note": "" },
+  "risk_notes": [],
+  "jd_text": "岗位职责：负责交易系统的服务端设计与开发；参与支付对账与清结算链路；优化接口性能。任职要求：5 年以上 Python 开发经验；熟悉 FastAPI、MySQL 索引优化；有 Redis 缓存设计经验；了解 Docker；有支付或交易系统背景者优先。",
+  "collected_at": "2026-04-01"
+}

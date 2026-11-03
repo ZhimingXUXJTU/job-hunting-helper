@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>求职工作台 · 本地</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>求职工作台</h1>
+    <div class="meta">
+      <span id="generated-at"></span>
+      <button id="refresh">刷新快照</button>
+    </div>
+    <p class="muted">每次任务先读本页快照；结果保存后回来刷新。页面不调用云模型，不访问招聘平台。</p>
+  </header>
+
+  <main>
+    <section class="card" id="sec-candidate">
+      <h2>事实库</h2>
+      <div id="candidate"></div>
+    </section>
+
+    <section class="card" id="sec-inbox">
+      <h2>待评估（jobs/inbox）</h2>
+      <div id="inbox"></div>
+    </section>
+
+    <section class="card" id="sec-evals">
+      <h2>评估结果（reports/private）</h2>
+      <div id="evals"></div>
+    </section>
+
+    <section class="card" id="sec-tracker">
+      <h2>投递与跟进（tracker.csv）</h2>
+      <div id="tracker"></div>
+    </section>
+
+    <section class="card" id="sec-rules">
+      <h2>当前规则（config/scoring.yml）</h2>
+      <div id="rules"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="muted" id="outputs-summary"></p>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

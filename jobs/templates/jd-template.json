@@ -1,0 +1,20 @@
+{
+  "id": "example-20260401-backend",
+  "company": "示例科技（虚构，用于演示录入格式）",
+  "position": "Python 后端工程师",
+  "source_url": "https://example.com/jobs/12345",
+  "source_platform": "BOSS直聘",
+  "published_at": "2026-03-28",
+  "city": "上海",
+  "district": "浦东新区",
+  "employment_type": "全职",
+  "salary": {
+    "min_k": 20,
+    "max_k": 35,
+    "months": 14,
+    "note": ""
+  },
+  "risk_notes": [],
+  "jd_text": "岗位职责：\n1. 负责交易系统的服务端设计与开发，保障核心链路稳定性；\n2. 参与需求评审，输出技术方案并落地；\n3. 优化接口性能，主导慢查询治理；\n4. 带教初级工程师。\n\n任职要求：\n1. 本科及以上，3 年以上 Python 开发经验；\n2. 熟悉 FastAPI 或 Django，熟悉 MySQL 索引优化；\n3. 有 Redis 缓存设计经验；\n4. 了解 Docker 与 CI/CD 流程者优先；\n5. 有电商交易或支付背景者优先。",
+  "collected_at": "2026-04-01"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "fake-lowsalary-20260401",
+  "company": "虚构小公司（测试数据）",
+  "position": "后端开发",
+  "source_url": "https://example.com/jobs/90003",
+  "source_platform": "测试",
+  "published_at": "2026-03-30",
+  "city": "上海",
+  "district": "",
+  "employment_type": "全职",
+  "salary": { "min_k": 10, "max_k": 15, "months": 12, "note": "" },
+  "risk_notes": [],
+  "jd_text": "岗位职责：负责后端开发。任职要求：3 年 Python 经验。",
+  "collected_at": "2026-04-01"
+}

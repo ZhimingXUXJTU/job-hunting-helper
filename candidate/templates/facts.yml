@@ -1,0 +1,54 @@
+# ============================================================
+# 候选人事实库（结构化层）— 脚本和 AI 共同的事实来源
+# 复制到 candidate/private/facts.yml 后填写。
+# 原则：
+#   1. 只写发生过的事实；不确定的字段保留 needs_proof
+#   2. skills 三档分开：expert（能主讲面试）/ practiced（做过完整交付）/ learned（学习了解）
+#      —— learned 永远不会出现在「项目经验」相关的匹配里
+#   3. 日期一旦定稿，只在这里改，产物引用这里，不允许出现第二个时间版本
+# ============================================================
+
+basics:
+  name: ""                    # 姓名
+  title: ""                   # 求职标题，如「Python 后端工程师 · 5 年」
+  years_of_experience: null   # 工作年限（整数年）
+  education: ""               # 最高学历，如「本科 · 计算机科学与技术」
+  phone: ""                   # 联系方式（只留在本文件，不出现在模板区）
+  email: ""
+
+preferences:
+  salary_floor_k: 18          # 月薪底线（千元，税前）——只作评分参考，低于底线减分不淘汰
+  salary_expect_k: 25         # 期望月薪（千元）——评估按综合年包（月薪×薪数）比较
+  cities: []                  # 目标城市列表，如 [上海, 杭州]；为空表示不限
+  directions: []              # 目标业务/技术方向关键词，如 [交易系统, 支付, 后端架构]
+  employment_type_blocked: [外包, 派遣]   # 不可接受的用工形式
+  non_negotiables: []         # 其他不可接受条件，如 [强制 996, 大小周]
+
+# 三档技能清单。匹配时 expert 记满分，practiced 记 70%，learned 不参与硬性要求匹配。
+skills:
+  expert: []                  # 能扛住追问、可主讲方案，如 [Python, FastAPI, MySQL]
+  practiced: []               # 有交付记录，如 [Docker, Redis]
+  learned: []                 # 学习了解、无交付，如 [RAG, Kubernetes] —— 永远不会被写成项目经验
+
+# 工作经历（时间线唯一来源）
+experience:
+  # - company: ""             # 公司名
+  #   title: ""               # 职位
+  #   start: ""               # YYYY-MM
+  #   end: ""                 # YYYY-MM 或 "至今"
+  #   scope: ""               # 一句话职责范围（团队规模/负责域）
+  #   evidence: []            # 佐证材料位置，如 [简历原件, 离职证明, 项目文档]
+
+# 项目记录（简历内容的事实来源）
+projects:
+  # - name: ""                # 项目名
+  #   role: ""                # 你的真实角色：主导/参与/支持 —— 只能从这三档里选
+  #   start: ""
+  #   end: ""
+  #   background: ""          # 立项背景与目标（一段话）
+  #   delivered: []           # 你亲手交付的东西，每条可独立核对
+  #                            #   如「订单服务的库存扣减模块（设计+开发+上线）」
+  #   metrics: []             # 可核实的量化结果，写不清来源就标 needs_proof
+  #                            #   如「接口 P99 从 800ms 降到 210ms（Grafana 面板存档）」
+  #   evidence: []            # 证据位置：代码仓/文档/绩效/背书人
+  #   status: verified        # verified=证据齐全 / needs_proof=待补证据（进不了可投递版本）

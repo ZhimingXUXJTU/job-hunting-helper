@@ -1,0 +1,64 @@
+basics:
+  name: "测试用户"
+  title: "Python 后端工程师 · 5 年（虚构测试数据）"
+  years_of_experience: 5
+  education: "本科 · 计算机科学与技术"
+  phone: ""
+  email: ""
+
+preferences:
+  salary_floor_k: 18
+  salary_expect_k: 25
+  cities: [上海]
+  directions: [交易系统, 支付, 后端架构]
+  employment_type_blocked: [外包, 派遣]
+  non_negotiables: [强制 996]
+
+skills:
+  expert: [Python, FastAPI, MySQL]
+  practiced: [Docker, Redis]
+  learned: [RAG, Kubernetes]
+
+experience:
+  - company: "虚构电商公司"
+    title: "后端工程师"
+    start: "2021-06"
+    end: "至今"
+    scope: "交易域服务端，团队 8 人"
+    evidence: [在职证明]
+
+projects:
+  - name: "订单库存扣减服务"
+    role: "参与"
+    start: "2022-03"
+    end: "2023-01"
+    background: "大促场景下库存超卖治理，立项目标把超卖率压到万分之一以下"
+    delivered:
+      - "库存扣减模块的设计文档与核心实现（参与，与同事协作）"
+      - "慢查询治理：订单主表 12 条慢 SQL 优化"
+    metrics:
+      - "接口 P99 从 800ms 降到 210ms（Grafana 面板存档）"
+    evidence: [代码仓, 面板截图]
+    status: verified
+  - name: "支付对账平台"
+    role: "主导"
+    start: "2023-05"
+    end: "2024-02"
+    background: "多渠道支付流水与订单的对账自动化，替代人工核对"
+    delivered:
+      - "对账引擎设计与开发，覆盖 3 个支付渠道"
+      - "差异工单流转接入"
+    metrics:
+      - "对账人力从每天 2 人时降到 10 分钟（周报记录）"
+    evidence: [代码仓, 周报]
+    status: verified
+  - name: "内部 RAG 知识库试点"
+    role: "参与"
+    start: "2024-06"
+    end: "2024-09"
+    background: "学习性质的内部试点，验证检索问答在工单场景的可行性"
+    delivered:
+      - "工单语料的清洗脚本（练手产出，未上生产）"
+    metrics: []
+    evidence: []
+    status: needs_proof

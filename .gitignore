@@ -1,0 +1,23 @@
+# 真实资料只留在本机，任何情况下不提交
+# 写法说明：忽略 private 目录的内容而非目录本身，.gitkeep 白名单才能生效
+**/private/*
+!**/private/.gitkeep
+
+# jobs/inbox 存放真实 JD，只保留虚构示例
+jobs/inbox/*
+!jobs/inbox/example.json
+
+# 运行产物（真实报告与岗位版材料写入各自的 private/，根目录只留模板）
+reports/*.json
+reports/*.md
+outputs/*
+!outputs/README.md
+!outputs/templates/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 日志
+*.log
